@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.GalleryFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#24B58F"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:id="@+id/search_toolbar"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="Search"
+        android:textColorHint="@color/colorStatusBar"
+        android:paddingStart="30dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_search_24"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/search_toolbar"
+        android:background="@drawable/greenbgbutton"
+        android:id="@+id/categ_txt"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="CATEGORIES"
+        android:textColor="@color/colorStatusBar"
+        android:fontFamily="@font/seguisb"
+        android:textSize="18dp"
+        android:paddingStart="20dp"
+        android:paddingTop="3dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_toolbar"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/green_box"
+        android:background="@drawable/greenbox"
+        android:layout_below="@id/categ_txt"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="DESCRIPTION"
+        android:textColorHint="#ffffff"
+        android:paddingStart="10dp"
+        android:background="@null"
+        android:layout_below="@id/categ_txt"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/greenbox"
+        android:id="@+id/pickup"
+        android:layout_below="@+id/green_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Pick-Up Location"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:paddingStart="18dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tapdonatebutton"
+        android:layout_below="@id/pickup"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:text="SUBMIT"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+
+
+</RelativeLayout>

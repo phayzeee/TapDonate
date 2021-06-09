@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="6dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/aghoshpdf"
+        android:layout_marginTop="10dp"
+        android:id="@+id/aghoshlogo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aghosh_txt"
+        android:layout_marginTop="10dp"
+        android:text="Aghosh Karachi"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/aghoshlogo"
+        android:fontFamily="@font/seguisb"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aghosh_second"
+        android:text="Sochlay"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/aghoshlogo"
+        android:textSize="10dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/segoeui"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_more_horiz_24"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/aghosh_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:id="@+id/btn_donate"
+        android:layout_toEndOf="@+id/aghosh_second"
+        android:layout_below="@+id/aghosh_txt"
+        android:textSize="13dp"
+        android:text="TAP DONATE"
+        android:textColor="#ffffff"
+        android:layout_marginStart="10dp"
+        android:padding="8dp"
+        android:background="@drawable/tapdonatebutton"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+</RelativeLayout>
